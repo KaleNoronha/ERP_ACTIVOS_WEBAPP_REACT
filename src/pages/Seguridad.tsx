@@ -6,7 +6,8 @@ import {
   VulnerabilidadesView, 
   IncidentesView 
 } from '@/features/seguridad'
-import { Tabs } from '../components/common'
+import { Tabs } from '@/shared/components/ui'
+
 
 interface SubsectionConfig {
   tabs: Array<{ id: string; label: string; icon: React.ComponentType<{ size?: number; className?: string }> }>
