@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Plus, Filter, Mail, Phone, Linkedin, Building2, Star, Users } from 'lucide-react'
-import { Button, SearchInput, Badge, getStatusVariant, StatCard, DataTable, Column } from '@/shared/components/ui'
+import { Button, SearchInput, Badge, getStatusVariant, StatCard } from '@/shared/components/ui'
 import { contactos } from '../data/mockData'
 import type { Contacto } from '@/shared/types/negocios.types'
 
@@ -19,49 +19,6 @@ export function ContactosView() {
     activos: contactos.filter(c => c.estado === 'Activo').length,
     decisionMakers: contactos.filter(c => c.esDecisionMaker).length,
   }
-
-  const columns: Column<Contacto>[] = [
-    { 
-      key: 'nombre', 
-      label: 'Contacto',
-      render: (_, item) => (
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
-            {item.nombre.charAt(0)}{item.apellido.charAt(0)}
-          </div>
-          <div>
-            <p className="font-semibold text-gray-800">{item.nombre} {item.apellido}</p>
-            <p className="text-xs text-gray-500">{item.cargo}</p>
-          </div>
-        </div>
-      )
-    },
-    { key: 'empresa', label: 'Empresa' },
-    { 
-      key: 'email', 
-      label: 'Email',
-      render: (value) => (
-        <a href={`mailto:${value}`} className="text-blue-600 hover:underline text-sm">
-          {String(value)}
-        </a>
-      )
-    },
-    { key: 'telefono', label: 'Teléfono' },
-    { 
-      key: 'esDecisionMaker', 
-      label: 'Decision Maker',
-      render: (value) => value ? (
-        <span className="flex items-center gap-1 text-yellow-600">
-          <Star size={14} fill="currentColor" /> Sí
-        </span>
-      ) : <span className="text-gray-400">No</span>
-    },
-    { 
-      key: 'estado', 
-      label: 'Estado',
-      render: (value) => <Badge variant={getStatusVariant(String(value))}>{String(value)}</Badge>
-    },
-  ]
 
   return (
     <div className="p-6">

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import {
   Check, Building, Contact, FileText, Tag, Box, AppWindow, Puzzle, Users, GitBranch,
-  KeyRound, ShieldCheck, ChevronRight, ChevronLeft, Zap, Ellipsis,
-  MoreVertical, Handshake, Target, LayoutDashboard, Settings, HelpCircle,
+  KeyRound, ShieldCheck, ChevronRight, ChevronLeft, Zap,
+  Handshake, Target, LayoutDashboard, Settings, HelpCircle,
   Share2, ChevronDown, Package, Layers
 } from 'lucide-react';
 
