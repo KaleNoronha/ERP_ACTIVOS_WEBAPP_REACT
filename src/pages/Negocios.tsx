@@ -9,9 +9,9 @@ import {
   ListaPreciosView, 
   ContratosView 
 } from '@/features/negocios'
+import { Tabs } from '@/shared/components/ui';
 
-// Importar Tabs del common existente (lo migraremos después)
-import { Tabs } from '../components/common'
+
 
 interface SubsectionConfig {
   tabs: Array<{ id: string; label: string; icon: React.ComponentType<{ size?: number; className?: string }> }>

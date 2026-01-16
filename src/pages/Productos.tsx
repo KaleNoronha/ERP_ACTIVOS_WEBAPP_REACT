@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Box, AppWindow, Puzzle, Database, Share2, Server, Layers, Table } from 'lucide-react'
-import { Tabs } from '../components/common'
+import { Tabs } from '@/shared/components/ui'
 import {
   ProductosView,
   AplicacionesView,
@@ -10,6 +10,7 @@ import {
   InfraestructuraView,
   StackView
 } from '@/features/productos'
+
 
 type SubsectionKey = 'productos' | 'aplicaciones' | 'componentes' | 'datos' | 'diagramas' | 'infraestructura' | 'stack'
 

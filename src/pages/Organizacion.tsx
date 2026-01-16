@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Users, Briefcase, GitBranch, FileText, Activity, Filter, Table, Settings } from 'lucide-react'
-import { Tabs } from '../components/common'
+import { Tabs } from '@/shared/components/ui'
 import { 
   PersonasView, 
   RolesView, 
@@ -8,6 +8,7 @@ import {
   ProcedimientosView,
   ActividadesView 
 } from '@/features/organizacion'
+
 
 type SubsectionKey = 'personas' | 'roles' | 'procesos' | 'procedimientos' | 'actividades'
 
