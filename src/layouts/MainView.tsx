@@ -1,8 +1,8 @@
 import { Target, Box, Users, ShieldCheck, TrendingUp, Activity, Clock, ArrowRight } from 'lucide-react'
-import Organizacion from '../../pages/Organizacion'
-import Seguridad from '../../pages/Seguridad'
-import Negocios from '../../pages/Negocios'
-import Productos from '../../pages/Productos'
+import Organizacion from '../pages/Organizacion'
+import Seguridad from '../pages/Seguridad'
+import Negocios from '../pages/Negocios'
+import Productos from '../pages/Productos'
 
 interface MainViewProps {
   activeSection: string
